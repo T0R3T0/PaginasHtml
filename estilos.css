@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Georgia', serif;
+  background-color: #f5eedc;
+  color: #3a3a3a;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+
+header {
+  background-color: #6b6832;
+  color: white;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  height: 80px;
+}
+
+h1 {
+  flex: 1;
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: 'Georgia', serif;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+
+
+}.icons span,
+.icons a,
+.icons button {
+  background-color: #f5eedc;
+  color: #6b6832;
+  border-radius: 50%;
+  padding: 0.6rem;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border: none;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+  background-color: #f5eedc;
+}
+
+.menu-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1 250px;
+  max-width: 250px;
+  align-items: center; /* ← Asegura centrado horizontal */
+}
+
+.menu-item h2 {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  color: #7b5733;
+  font-family: 'Georgia', serif;
+  text-align: center;
+}
+
+
+.menu-item img {
+  border: 5px solid #6b6832;
+  border-radius: 4px;
+  width: 200px; 
+  height: 150px;       /* ← Añadido para un alto consistente */
+  object-fit: cover;     /* ← Recorta la imagen sin deformarla */
+  margin-top: 3rem;
+}
+
+
+.menu-item p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  font-family: 'Georgia', serif;
+}
+
+footer {
+  background-color: #7b5733;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+footer .social i {
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  color: #6b6832;
+  background-color: #f5eedc;
+  border-radius: 50%; 
+  padding: 0.5rem;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+footer .social i {
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  color: #6b6832;
+  background-color: #f5eedc;
+  border-radius: 4px;
+  padding: 0.2rem;
+}
+
+footer a {
+  color: #f5eedc;
+  text-decoration: none;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-item img {
+    width: 90%;
+  }
+}
+
+
