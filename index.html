@@ -1,51 +1,95 @@
 <!DOCTYPE html>
+<!-- Declaración del tipo de documento HTML5 -->
+
 <html lang="es">
+<!-- Inicio del documento HTML con el idioma español -->
 <head>
   <meta charset="UTF-8">
+  <!-- Establece la codificación de caracteres a UTF-8 -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Configura la vista para dispositivos móviles -->
   <title>Menús</title>
+  <!-- Título de la página que aparece en la pestaña del navegador -->
+
   <link rel="stylesheet" href="estilos.css">
+  <!-- Enlace al archivo de estilos CSS personalizado -->
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Enlace a la biblioteca de iconos Font Awesome -->
 </head>
+
 <body>
   <header>
+    <!-- Encabezado de la página -->
+
     <div class="logo">
       <img src="imagenes/logo.png" alt="Logo Pique con Amor">
+      <!-- Logo de la página -->
     </div>
-    <h1>Menús</h1>
-    <div class="icons">     
-  <button onclick="buscar()" title="Buscar"><i class="fa-solid fa-search"></i></button>
-  <a href="perfil.html" title="Perfil de usuario"><i class="fa-solid fa-user"></i></a>
-  <a href="carrito.html" title="Carrito de compras"><i class="fa-solid fa-cart-shopping"></i></a>
-</div>
 
+    <h1>Menús</h1>
+    <!-- Título principal de la página -->
+
+    <div class="icons">
+      <!-- Sección de iconos interactivos -->
+
+      <button onclick="buscar()" title="Buscar">
+        <i class="fa-solid fa-search"></i>
+      </button>
+      <!-- Botón de búsqueda con icono -->
+
+      <a href="perfil.html" title="Perfil de usuario">
+        <i class="fa-solid fa-user"></i>
+      </a>
+      <!-- Enlace al perfil de usuario con icono -->
+
+      <a href="carrito.html" title="Carrito de compras">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </a>
+      <!-- Enlace al carrito de compras con icono -->
+    </div>
   </header>
+
   <main>
+    <!-- Contenido principal de la página -->
+
     <div class="menu-item">
-        <h2>Menú principal</h2>
+      <h2>Menú principal</h2>
       <img src="imagenes/menuPrincipal.jpeg" alt="Menú Principal">
       <p>¡El mejor sabor con amor!<span></span></p>
+      <!-- Descripción del menú principal -->
     </div>
+
     <div class="menu-item">
-        <h2>Menú Vegano</h2>
+      <h2>Menú Vegano</h2>
       <img src="imagenes/menuVegano.jpeg" alt="Menú Vegano">
-      <p>¡Vive vegano , vive bien!<span></span></p>
+      <p>¡Vive vegano, vive bien!<span></span></p>
+      <!-- Descripción del menú vegano -->
     </div>
+
     <div class="menu-item">
-        <h2>Menú Internacional</h2>
+      <h2>Menú Internacional</h2>
       <img src="imagenes/menuInternacional.jpeg" alt="Menú Internacional">
       <p>¡El mundo en cada bocado!<span></span></p>
+      <!-- Descripción del menú internacional -->
     </div>
   </main>
 
   <footer>
+    <!-- Pie de página -->
+
     <div class="social">
       <i class="fab fa-facebook-f"></i>
       <i class="fab fa-whatsapp"></i>
       <i class="fab fa-instagram"></i>
+      <!-- Iconos de redes sociales -->
     </div>
+
     <p>Copyright</p>
+    <!-- Información de derechos de autor -->
+
     <p><a href="#">Términos Legales</a></p>
+    <!-- Enlace a los términos legales -->
   </footer>
 </body>
 </html>
